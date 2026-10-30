@@ -1,9 +1,16 @@
-html, body, #root { height: 100%; margin: 0; } .flex-container { display: flex;
-justify-content: space-between; /* Раскидывает элементы по всей ширине с равными
-промежутками */ width: 700px; height: 300px; } .flex-container > div { width:
-100px; height: 100px; border-radius: 50%; /* Превращает квадраты в круги */
-background-color: #DAA520; } /* Прижимаем 1-й и 5-й к верху */ .flex-container >
-div:nth-child(1), .flex-container > div:nth-child(5) { align-self: flex-start; }
-/* Центрируем 2-й и 4-й по вертикали */ .flex-container > div:nth-child(2),
-.flex-container > div:nth-child(4) { align-self: center; } /* Прижимаем 3-й к
-низу */ .flex-container > div:nth-child(3) { align-self: flex-end; }
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Flex</title>
+        <link rel="stylesheet" type="text/css" href="./src/App.css" />
+    </head>
+    <body>
+        <section class="flex-container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </body>
+</html>
